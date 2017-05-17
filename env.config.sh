@@ -34,7 +34,8 @@ export GITLAB_ROOT_PASSWORD=${PASSWORD_GITLAB}
 export GITLAB_DB_PORT=5432
 export GITLAB_DB_USER=git
 export GITLAB_DB_NAME=gitlabhq_production
-
+export GITLAB_DB_ENDPOINT=endpoint
+export GITLAB_PWD=password
 # Gerrit and Jenkins
 #export GERRIT_JENKINS_USERNAME="jenkins"
 

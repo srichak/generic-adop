@@ -25,9 +25,10 @@ ldap:
 gitlab:
   volume_driver: nfs
   volumes:
-      - /data/gitlab_conf:/etc/gitlab
-      - /data/gitlab_logs:/var/log/gitlab
-      - /data/gitlab_data:/var/opt/gitlab
+      - ${NFS_HOST}/nfs/gitlab_conf:/etc/gitlab
+      - ${NFS_HOST}/nfs/gitlab_logs:/var/log/gitlab
+      - ${NFS_HOST}/nfs/gitlab_data:/var/opt/gitlab
+      
 sensu-api:
   volume_driver: nfs
   volumes:
