@@ -19,17 +19,24 @@ export LDAP_GROUP_NAME_ADMIN="administrators"
 
 # Gerrit MySQL
 
-export GERRIT_MYSQL_USER="gerrit"
-export GERRIT_MYSQL_PASSWORD="gerrit"
-export GERRIT_MYSQL_DATABASE="gerrit"
+#export GERRIT_MYSQL_USER="gerrit"
+#export GERRIT_MYSQL_PASSWORD="gerrit"
+#export GERRIT_MYSQL_DATABASE="gerrit"
 
 # Gerrit
 
-export GERRIT_USER_NAME="Gerrit Code Review"
-export GERRIT_USER_EMAIL="gerrit@adop"
+#export GERRIT_USER_NAME="Gerrit Code Review"
+#export GERRIT_USER_EMAIL="gerrit@adop"
+
+# Gitlab
+
+export GITLAB_ROOT_PASSWORD=${PASSWORD_GITLAB}
+export GITLAB_DB_PORT=5432
+export GITLAB_DB_USER=git
+export GITLAB_DB_NAME=gitlabhq_production
 
 # Gerrit and Jenkins
-export GERRIT_JENKINS_USERNAME="jenkins"
+#export GERRIT_JENKINS_USERNAME="jenkins"
 
 # Sonar MySQL
 

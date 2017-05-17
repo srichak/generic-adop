@@ -62,9 +62,6 @@ gitlab:
     - "9880"
     - "22"
     - "8080"
-  depends_on:
-    - gitlab-redis
-    - ldap
   environment:
     "affinity:container": "=gitlab-redis"
     GITLAB_ROOT_PASSWORD: ${GITLAB_ROOT_PASSWORD} 
